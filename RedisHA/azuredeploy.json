@@ -130,7 +130,7 @@
     "osFamilyUbuntu": {
       "imagePublisher": "Canonical",
       "imageOffer": "UbuntuServer",
-      "imageSKU": "18.04-LTS"
+      "imageSKU": "16.04.2-LTS"
     },
     "vmStorageAccountContainerName": "vhd-redis",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
@@ -159,7 +159,7 @@
         "publisher": "[variables('osFamilyUbuntu').imagePublisher]",
         "offer": "[variables('osFamilyUbuntu').imageOffer]",
         "sku": "[variables('osFamilyUbuntu').imageSKU]",
-        "version": "18.04.20180911"
+        "version": "latest"
       }
     },
     "clusterSpec": "[variables(concat('tshirtSize', parameters('tshirtSize')))]",
