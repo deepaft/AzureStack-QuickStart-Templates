@@ -130,11 +130,11 @@
     "osFamilyUbuntu": {
       "imagePublisher": "Canonical",
       "imageOffer": "UbuntuServer",
-      "imageSKU": "16.04.2-LTS"
+      "imageSKU": "18.04-LTS"
     },
     "vmStorageAccountContainerName": "vhd-redis",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
-    "scriptUrl": "https://raw.githubusercontent.com/deepaft/AzureStack-QuickStart-Templates/redis/RedisHA/",
+    "scriptUrl": "https://raw.githubusercontent.com/deepaft/AzureStack-QuickStart-Templates/RedisHA/",
     "templateBaseUrl": "[variables('scriptUrl')]",
     "jumpboxTemplateEnabled": "jumpbox-resources.json",
     "jumpboxTemplateDisabled": "empty-resources.json",
@@ -159,7 +159,7 @@
         "publisher": "[variables('osFamilyUbuntu').imagePublisher]",
         "offer": "[variables('osFamilyUbuntu').imageOffer]",
         "sku": "[variables('osFamilyUbuntu').imageSKU]",
-        "version": "latest"
+        "version": "18.04.20180911"
       }
     },
     "clusterSpec": "[variables(concat('tshirtSize', parameters('tshirtSize')))]",
