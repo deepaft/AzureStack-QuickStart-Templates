@@ -252,6 +252,7 @@ configure_redis()
 	sed -i "s/^daemonize no$/daemonize yes/g" redis.conf
 	sed -i 's/^logfile ""/logfile \/var\/log\/redis.log/g' redis.conf
 	sed -i "s/^loglevel verbose$/loglevel notice/g" redis.conf
+	sed -i "s/^bind 127.0.0.1$/bind 127.0.0.1 ${IP_PREFIX}$NODE_INDEX/g" redis.conf
 	sed -i "s/^dir \.\//dir \/var\/redis\//g" redis.conf 
 	sed -i "s/\${REDISPORT}.conf/redis.conf/g" utils/redis_init_script 
 	sed -i "s/_\${REDISPORT}.pid/.pid/g" utils/redis_init_script 

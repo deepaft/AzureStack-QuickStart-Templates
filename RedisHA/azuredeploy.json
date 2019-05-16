@@ -134,7 +134,7 @@
     },
     "vmStorageAccountContainerName": "vhd-redis",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
-    "scriptUrl": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/redis-high-availability/",
+    "scriptUrl": "https://raw.githubusercontent.com/deepaft/AzureStack-QuickStart-Templates/redis/RedisHA/",
     "templateBaseUrl": "[variables('scriptUrl')]",
     "jumpboxTemplateEnabled": "jumpbox-resources.json",
     "jumpboxTemplateDisabled": "empty-resources.json",
